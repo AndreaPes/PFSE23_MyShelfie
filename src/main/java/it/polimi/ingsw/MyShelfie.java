@@ -23,6 +23,22 @@ public class MyShelfie {
      * @param args command line arguments
      */
     public static void main(String[] args) throws IOException {
+        if (args.length > 0) {
+            if (args[0].equalsIgnoreCase("--mode")) {
+                if (args.length > 1) {
+                    if (args[1].equalsIgnoreCase("server")) {
+                        System.out.println("Starting as a server...");
+                        Server.main(args);
+                        return;
+                    } else if (args[1].equalsIgnoreCase("client")) {
+                        System.out.println("Starting as a client...");
+                        Client.main(args);
+                        return;
+                    }
+                }
+            }
+        }
+
         String choice = "";
         showMenu();
         while (choice.isEmpty()) {
