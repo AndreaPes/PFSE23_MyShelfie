@@ -1,4 +1,4 @@
-# Final Exam in Software Engineering 2022-2023
+# Final Exam in Software Engineering 2022-23
 ___
 ### A Java implementation of the board game [My Shelfie](https://www.craniocreations.it/prodotto/my-shelfie) by [Cranio Creations](https://www.craniocreations.it/)
 ___
